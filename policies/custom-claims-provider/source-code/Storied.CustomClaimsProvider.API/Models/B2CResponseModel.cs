@@ -42,9 +42,21 @@ namespace Storied.CustomClaimsProvider.API.Models
         [JsonPropertyName("status")]
         public string? Status { get; set; }
 
-        [JsonPropertyName("extension_CustomClaim")]
-        //[JsonPropertyName("CustomClaim")]
+        [JsonPropertyName("extension_CustomClaim")]       
         public string CustomClaim { get; set; } = string.Empty;
+        [JsonPropertyName("extension_RecurlySubscriptionUuid")]
+        public string RecurlySubscriptionUuid { get; set; } = string.Empty;
+        [JsonPropertyName("extension_PlanId")]
+        public string PlanId { get; set; } = string.Empty;
+        [JsonPropertyName("extension_StartDate")]
+        public string StartDate { get; set; } = string.Empty;
+        [JsonPropertyName("extension_EndDate")]
+        public string EndDate { get; set; } = string.Empty;
+
+        [JsonPropertyName("extension_AccountImagePath")]
+        public string AccountImagePath { get; set; } = string.Empty;
+
+        
     }
 
 }
