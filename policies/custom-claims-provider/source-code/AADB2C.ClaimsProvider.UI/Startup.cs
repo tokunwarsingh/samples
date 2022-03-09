@@ -33,7 +33,7 @@ namespace AADB2C.ClaimsProvider.UI
         {
             if (env.IsDevelopment())
             {
-                app.UseBrowserLink();
+                //app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
             }
             else
